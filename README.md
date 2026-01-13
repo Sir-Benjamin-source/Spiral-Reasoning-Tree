@@ -21,3 +21,13 @@ This repository provides the core Python implementation.
 **Preferred Formula (Polished Iteration – v1.1)**  
 ```math
 R_{polish} \approx \frac{T \times \Delta_P \times \sqrt{L \times B_H} \times TCN}{Q^2 \times (B^2 - L)}
+
+### 3D Helical Visualization
+Located in `extensions/srt_3d_projection.py`
+
+```python
+from core.SpiralReasoningTree import SpiralReasoningTree
+from extensions.srt_3d_projection import visualize_3d
+
+srt = SpiralReasoningTree(Q=6, T=10, Delta_P=1.1, TCN=1.1)
+visualize_3d(srt, 'my_3d_helix.png')

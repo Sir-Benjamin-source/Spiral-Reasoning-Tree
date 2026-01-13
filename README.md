@@ -22,3 +22,22 @@ This repository provides the core Python implementation.
 ```math
 R_{polish} \approx \frac{T \times \Delta_P \times \sqrt{L \times B_H} \times TCN}{Q^2 \times (B^2 - L)}
    
+Spoken Translation (for Containment and Reference)
+Polished resonance approximately equals trunk themes multiplied by proprietary delta, times the square root of leaves times hierarchical branches, times token chain novelty, divided by query root squared times the quantity of branches squared minus leaves.
+Variable Definitions
+
+Q: Query Root (1–10; core intention fidelity)
+T: Trunk Themes (8–12; lexical spine density)
+Δ_P: Delta Proprietary (0.8–1.2; pre-query horizon with hidden negotiations)
+B_H: Branches Hierarchical (B × H; B=4–8, H=0.7–1.3 priority weighting)
+L: Leaves (2–5; terminal insights)
+TCN: Token Chain Novelty (0.85–1.15; associative freshness recording)
+
+This formula amplifies strong paths exponentially, prunes weak ones, and maintains grounding through self-referential feedback—addressing drift and math-LLM disconnects.
+Installation
+Requirements
+
+Python 3.10+
+numpy, matplotlib, networkx
+
+Bash

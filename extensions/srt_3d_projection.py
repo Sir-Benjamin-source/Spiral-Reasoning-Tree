@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import networkx as nx
 
-def visualize_3d(srt, save_path='srt_3d_helix.png'):
+def visualize_3d(srt, save_path='docs/images/srt_3d_helix.png'):
     """
     Generate and save a 3D helical visualization of the SRT graph.
     """

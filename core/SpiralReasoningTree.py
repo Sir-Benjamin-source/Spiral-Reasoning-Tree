@@ -82,7 +82,7 @@ class SpiralReasoningTree:
 
         return G
 
-    def visualize(self, save_path: str = 'srt_graph.png', dim_mode: str = '2D'):
+    def visualize(self, save_path: str = 'docs/images/srt_graph.png', dim_mode: str = '2D'):
         """
         Visualize the graph (2D default; 3D extension in separate file).
         Saves PNG to disk.
@@ -97,12 +97,12 @@ class SpiralReasoningTree:
             plt.title(f'SRT Visualization (2D) – Resonance ≈ {self.compute_resonance():.3f}')
             plt.savefig(save_path)
             plt.close()
-
+            print(f"Graph saved to: {save_path}")
         else:
             raise NotImplementedError("Higher dimensions in extensions/srt_3d_projection.py")
 
         return save_path
-
+    
     def assess_metrics(self) -> dict:
         """
         Compute structural metrics from the graph.

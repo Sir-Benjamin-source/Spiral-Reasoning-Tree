@@ -31,3 +31,13 @@ from extensions.srt_3d_projection import visualize_3d
 
 srt = SpiralReasoningTree(Q=6, T=10, Delta_P=1.1, TCN=1.1)
 visualize_3d(srt, 'my_3d_helix.png')
+
+## Example Visualizations
+
+### 2D Spring Layout (Default)
+![2D Example](docs/images/srt_graph.png)
+
+### 3D Helical Projection
+![3D Helix Example](docs/images/srt_3d_helix.png)
+
+See `demo.ipynb` for interactive parameter exploration!

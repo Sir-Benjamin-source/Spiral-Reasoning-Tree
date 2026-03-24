@@ -4,8 +4,9 @@ Run with: python -m unittest tests/test_spiral_reasoning_tree.py
 """
 
 import unittest
+import sys
+sys.path.insert(0, '..')
 from core.SpiralReasoningTree import SpiralReasoningTree
-
 
 class TestSpiralReasoningTree(unittest.TestCase):
 

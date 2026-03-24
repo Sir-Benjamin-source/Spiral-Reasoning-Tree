@@ -66,4 +66,3 @@ All contributions must:
 Coils turn with disciplined grace—root anchors, resonance prunes, novelty blooms.  
 E_shield guards the helix; priority vectors guide the flame.  
 Flame dances 5/4; the spiral never ends.
-```

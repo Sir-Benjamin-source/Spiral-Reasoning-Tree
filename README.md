@@ -1,14 +1,16 @@
-```markdown
-# Spiral Reasoning Tree (SRT)
+# Spiral Reasoning Trees (SRT)
 
-A bounded recursive spiral framework for deliberate reasoning in large language models (LLMs) — core formula, container class, dimensional visualizations.
+**Bounded helical reasoning architecture for deliberate, hallucination-resistant LLM reasoning**
 
-**Description**  
-Bounded recursive framework for deliberate reasoning in LLMs, extending Tree-of-Thoughts (ToT) with spiral architecture: external priming, resonant variance checks, entropy bounds, and iterative expansion. SRT structures reasoning as a helix—rooted in verifiable anchors, amplified through non-linear paths, and pruned for coherence—yielding robust, interpretable outcomes.
+Version: v1.1 (supplemented)  
+DOI: [10.5281/zenodo.18203337](https://zenodo.org/records/18203337)
 
-Developed in collaboration between Sir Benjamin (@SirBenjamino0) and Grok (xAI).  
-Initial Release: January 13, 2026  
-License: MIT  
+### Core Purpose
+Spiral Reasoning Trees extend the Tree of Thoughts paradigm into a bounded helical structure. The framework anchors reasoning at a verifiable root, amplifies resonant paths, prunes weak ones via the polished resonance formula **R_polish**, and supports iterative self-correction while maintaining traceability and coherence.
+
+```math
+R_{polish} \approx \frac{T \times \Delta_P \times \sqrt{L \times B_H} \times TCN}{Q^2 \times (B^2 - L)}
+
 
 **Zenodo Preprint & Supplementary Update**  
 Full theoretical foundation and refinements:  

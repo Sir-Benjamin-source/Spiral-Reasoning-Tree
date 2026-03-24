@@ -1,4 +1,3 @@
-# tests/test_spiral_reasoning_tree.py
 """
 Basic unit tests for SpiralReasoningTree core class.
 Run with: python -m unittest tests/test_spiral_reasoning_tree.py
@@ -6,6 +5,7 @@ Run with: python -m unittest tests/test_spiral_reasoning_tree.py
 
 import unittest
 from core.SpiralReasoningTree import SpiralReasoningTree
+
 
 class TestSpiralReasoningTree(unittest.TestCase):
 
@@ -44,6 +44,7 @@ class TestSpiralReasoningTree(unittest.TestCase):
             import os
             if os.path.exists('test_smoke_graph.png'):
                 os.remove('test_smoke_graph.png')
+
 
 if __name__ == '__main__':
     unittest.main()

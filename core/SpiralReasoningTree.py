@@ -103,6 +103,11 @@ class SpiralReasoningTree:
         return G
 
     def visualize(self, save_path: str = 'docs/images/srt_graph.png', dim_mode: str = '2D'):
+        """Visualization with automatic directory creation."""
+        import os
+        # Auto-create directory if it doesn't exist
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+        
         G = self.generate_graph()
         if dim_mode.upper() == '2D':
             pos = nx.spring_layout(G, seed=42)

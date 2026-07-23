@@ -127,6 +127,30 @@ class PoetryTree:
 
         return "\n".join(lines)
 
+    def metrics(self) -> Dict[str, Any]:
+        """Simple quantifiable metrics for the tree."""
+        if not self.trunk:
+            return {"nodes": 0, "depth": 0, "limbs": 0, "branches": 0, "leaves": 0}
+
+        limbs = self.trunk.children
+        branches = []
+        leaves = []
+        for limb in limbs:
+            branches.extend(limb.children)
+            for branch in limb.children:
+                leaves.extend(branch.children)
+
+        return {
+            "seed": self.seed,
+            "total_nodes": 1 + len(limbs) + len(branches) + len(leaves),
+            "depth": 4 if leaves else (3 if branches else (2 if limbs else 1)),
+            "limbs": len(limbs),
+            "branches": len(branches),
+            "leaves": len(leaves),
+            "avg_branches_per_limb": round(len(branches) / max(len(limbs), 1), 2),
+            "avg_leaves_per_branch": round(len(leaves) / max(len(branches), 1), 2),
+        }
+
 
 def levity_injector(
     original_root: str,
@@ -165,5 +189,5 @@ if __name__ == "__main__":
     tree.add_leaf(branch, "a remark that reduces tension while remaining connected to the original subject")
 
     print(tree.summary())
-    print("\n--- JSON ---")
-    print(tree.to_json())
+    print("\n--- Metrics ---")
+    print(json.dumps(tree.metrics(), indent=2))

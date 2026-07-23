@@ -8,14 +8,23 @@ The Poetry Tree is a soft-mode hierarchical method for mapping the lexical and a
 
 ## Key Files
 
-- `extensions/poetry_tree.py` — Implementation (PoetryTree class + levity_injector helper)
+- `extensions/poetry_tree.py` — Implementation (`PoetryTree` class + `levity_injector` helper + `metrics()`)
 - Teaching documents (Method Stabilization Routine + Poetry Tree lesson) deposited on Zenodo
+- `docs/poetry_tree_TEST_RESULTS.md` — Structural test results from 14 seeds (2026-07-23)
 
 ## Core Principle
 
 A restatement is useful only while it continues to illustrate the same core structure.
 - Faithful restatement → additional logical anchor
 - Drift from the core demonstration → point of contention (revise or remove)
+
+## Metrics (v0.1)
+
+The `metrics()` method returns:
+- total_nodes, depth, limbs, branches, leaves
+- avg_branches_per_limb, avg_leaves_per_branch
+
+Observed pattern across 14 test trees: depth consistently 4, nodes typically 9–13, leaves 3–6.
 
 ## Integration Notes
 
@@ -25,4 +34,5 @@ A restatement is useful only while it continues to illustrate the same core stru
 
 ## Status
 
-v0.1 — Lightweight extension. Compatible with existing SRT resonance and provenance patterns.
+v0.1 — Lightweight extension with structural metrics.  
+Efficiency claims: none advanced. Target held at 3%.

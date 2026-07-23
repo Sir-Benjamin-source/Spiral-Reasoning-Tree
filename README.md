@@ -11,7 +11,7 @@ The Spiral Reasoning Tree is a structured, self-correcting reasoning system desi
 - Mermaid-compatible tree visualization for human auditing
 - Strong anti-drift and anti-hallucination mechanisms
 - Seamless integration with other Spiral Codex tools
-- **New (v0.1 extension):** Poetry Tree soft-mode lexical resonance method
+- **Poetry Tree soft-mode extension** (lexical resonance + metrics)
 
 ## Philosophy
 
@@ -23,8 +23,9 @@ A lightweight hierarchical lexical-resonance method for exploring the associativ
 
 - **Module:** `extensions/poetry_tree.py`
 - **Companion documents:** [doi:10.5281/zenodo.21516661](https://doi.org/10.5281/zenodo.21516661)
-- **Includes:** Poetry Tree construction + Levity Injector helper
+- **Includes:** Poetry Tree construction, Levity Injector helper, and `metrics()`
 - **Principle:** Deliberate synonymic reconfiguration (restatement is useful only while it continues to illustrate the same core structure)
+- **Structural tests:** 14 seeds, consistent depth 4, avg ~10.6 nodes (see `docs/poetry_tree_TEST_RESULTS.md`)
 
 The Poetry Tree supplies associative range that SRT can later score or prune. It is a complementary soft mode, not a replacement for bounded recursive deliberation.
 
@@ -42,6 +43,7 @@ tree.set_etymology("Latin levitas ← levis ← PIE *legwh-")
 trunk = tree.set_trunk("lightness (of weight, of manner, of mind)")
 # ... add limbs, branches, leaves
 print(tree.summary())
+print(tree.metrics())
 ```
 
 ## Related Tools
